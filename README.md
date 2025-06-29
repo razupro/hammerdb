@@ -44,3 +44,4 @@ Things to note:
 4. Change "sa" account password across all tcl scripts to "Ibm@123" 
 5. Change odbc driver,"sa" in mssqls_tprocc_runxx.tcl and under C:\Program files\HammerDB-4.12\scripts\tcl\mssql\tprocc\*.tcl
 6. change powershell working path to "C:\Program files\HammerDB-4.12" in ps1 scripts
+7. hbxtprof.log file path has to be changed from TCL files. remove "1" from the path as that causes error
