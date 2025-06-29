@@ -1,6 +1,3 @@
-Windows HammerDB scripts used for testing MultiIO thread functionality
-Written by David Schmidt (daschmid@redhat.com) 
-Updated June 2025
 
 All scripts should be copied into a HammerDB 4.12 directory. The scripts assume 
 HammerDB has been installed in D:\HammerDB-4.12. The hammerdb-* scripts that 
@@ -41,7 +38,7 @@ Things to note:
 1. Default installation dir: C:\Program files\HammerDB-4.12
 2. Create "results" directory under HammerDB-4.12 dir
 3. Change "mssqls_linux_odbc {ODBC Driver 18 for SQL Server}" to "mssqls_odbc_driver {ODBC Driver 17 for SQL Server}"
-4. Change "sa" account password across all tcl scripts to "Ibm@123" 
+4. Change "sa" account password across all tcl scripts to "user set password" 
 5. Change odbc driver,"sa" in mssqls_tprocc_runxx.tcl and under C:\Program files\HammerDB-4.12\scripts\tcl\mssql\tprocc\*.tcl
 6. change powershell working path to "C:\Program files\HammerDB-4.12" in ps1 scripts
 7. hbxtprof.log file path has to be changed from TCL files. remove "1" from the path as that causes error
