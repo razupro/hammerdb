@@ -37,3 +37,10 @@ TCL scripts used  to run 10, 20, 40, 80, and 100 user configurations of HammerDB
   mssqls_tprocc_run40.tcl  
   mssqls_tprocc_run100.tcl  
 
+Things to note:
+1. Default installation dir: C:\Program files\HammerDB-4.12
+2. Create "results" directory under HammerDB-4.12 dir
+3. Change "mssqls_linux_odbc {ODBC Driver 18 for SQL Server}" to "mssqls_odbc_driver {ODBC Driver 17 for SQL Server}"
+4. Change "sa" account password across all tcl scripts to "Ibm@123" 
+5. Change odbc driver,"sa" in mssqls_tprocc_runxx.tcl and under C:\Program files\HammerDB-4.12\scripts\tcl\mssql\tprocc\*.tcl
+6. change powershell working path to "C:\Program files\HammerDB-4.12" in ps1 scripts
